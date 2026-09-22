@@ -61,11 +61,11 @@ Halaman dibuat dengan beberapa bagian utama:
 
 ## Screenshot Coding
 
-![Screenshot coding 1](Screenshot1.png)
+![Screenshot coding](Screenshot2.png)
 
-![Screenshot coding 2](Screenshot2.png)
+![Screenshot coding](Screenshot3.png)
 
-![Screenshot coding 3](Screenshot3.png)
+![Screenshot coding](Screenshot1.png)
 
 ## Screenshot Hasil Running
 
