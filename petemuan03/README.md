@@ -24,5 +24,3 @@ Halaman profil Rapip diperbarui agar lebih menarik dan mudah dibaca hanya dengan
 ### Sesudah — Mobile
 
 ![Profil mahasiswa sesudah modifikasi pada mobile](./screenshots/sesudah-mobile.png)
-
-File screenshot tersedia di folder [`screenshots/`](./screenshots/). Halaman sumber dapat dibuka di [index-sebelum.html](./index-sebelum.html) dan [index.html](./index.html).
