@@ -1,0 +1,278 @@
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222;
+    color: #111;
+    font-size: 12px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #999;
+    padding: 12px 20px;
+    min-height: 65px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Banner tanpa gambar */
+.banner {
+    height: 118px;
+    background-color: #fff;
+    padding: 7px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.banner input {
+    width: 260px;
+    max-width: 100%;
+    height: 22px;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/* Konten utama */
+main {
+    padding: 8px 16px 36px;
+}
+
+/* Kotak section */
+.section-box {
+    background-color: #999;
+    border-radius: 5px;
+    padding: 4px;
+    margin-bottom: 8px;
+}
+
+.section-box h3 {
+    color: #fff;
+    font-size: 12px;
+    margin: 2px 0 10px;
+}
+
+/* Topics */
+.topic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+
+.topic-card {
+    background-color: #fff;
+    min-height: 57px;
+    border-radius: 5px;
+    padding: 10px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topic-icon {
+    font-size: 30px;
+    color: #555;
+    margin-right: 3px;
+}
+
+/* Profil */
+.profile-content {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px;
+    min-height: 122px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Kotak pengganti gambar */
+.image-placeholder {
+    width: 104px;
+    min-width: 104px;
+    height: 104px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #222;
+    font-size: 12px;
+}
+
+.profile-description {
+    flex: 1;
+    text-align: center;
+    padding: 5px 10px;
+    line-height: 1.35;
+}
+
+.profile-description p {
+    margin-bottom: 6px;
+}
+
+.more-button {
+    display: inline-block;
+    background-color: #999;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.more-button:hover {
+    background-color: #777;
+}
+
+/* Layanan */
+.services {
+    text-align: center;
+    padding: 2px 0 0;
+}
+
+.services h3 {
+    color: #999;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 104px;
+    height: 104px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #111;
+    text-decoration: none;
+    line-height: 1.3;
+}
+
+.service-card:hover {
+    background-color: #eee;
+}
+
+/* Footer */
+footer {
+    min-height: 100px;
+    background-color: #999;
+    color: #fff;
+    padding: 35px 5% 10px;
+    position: relative;
+    font-size: 10px;
+}
+
+.footer-text {
+    line-height: 1.5;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 18px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        padding: 12px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .banner {
+        height: 90px;
+    }
+
+    main {
+        padding: 8px 10px 25px;
+    }
+
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-content {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .image-placeholder {
+        width: 100%;
+        max-width: 180px;
+        min-width: 0;
+        height: 110px;
+    }
+
+    .profile-description {
+        padding: 5px;
+    }
+
+    .service-list {
+        gap: 8px;
+    }
+
+    .service-card {
+        width: 29%;
+        min-width: 90px;
+        height: 95px;
+    }
+}
