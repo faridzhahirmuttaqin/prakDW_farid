@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Wireframe portal berita dengan anotasi fungsi untuk desktop dan mobile."
+    />
+    <title>Wireframe Portal Berita</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#beranda" aria-label="Kabar Kita, beranda">
+          <span class="brand-mark" aria-hidden="true">KK</span>
+          <span>KABAR KITA</span>
+        </a>
+        <div class="header-note">
+          <strong>WIREFRAME</strong>
+          <span>Rancangan portal berita</span>
+        </div>
+      </div>
+      <p class="annotation header-annotation">
+        Header — identitas portal dan judul rancangan.
+      </p>
+    </header>
+
+    <nav class="main-nav" aria-label="Kategori berita">
+      <div class="nav-inner">
+        <a href="#beranda" aria-current="page">Beranda</a>
+        <a href="#nasional">Nasional</a>
+        <a href="#teknologi">Teknologi</a>
+        <a href="#gaya-hidup">Gaya Hidup</a>
+        <a href="#olahraga">Olahraga</a>
+        <a class="search-link" href="#pencarian">Cari berita</a>
+      </div>
+      <p class="annotation nav-annotation">
+        Navigasi — jalan pintas untuk berpindah kategori berita.
+      </p>
+    </nav>
+
+    <main id="beranda" class="page">
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">Rancangan low-fidelity</p>
+          <h1>Berita hari ini</h1>
+        </div>
+        <p class="annotation">
+          Konten utama — menampilkan berita pilihan dan daftar berita terbaru.
+        </p>
+      </div>
+
+      <div class="content-layout">
+        <div class="main-column">
+          <section class="featured" aria-labelledby="featured-title">
+            <div class="image-placeholder featured-image">
+              <span>AREA GAMBAR UTAMA</span>
+            </div>
+            <div class="featured-copy">
+              <p class="category">NASIONAL</p>
+              <h2 id="featured-title">
+                Kota menyiapkan ruang publik baru untuk warga
+              </h2>
+              <p>
+                Ringkasan singkat memberi gambaran isi berita sebelum pembaca
+                membuka artikel lengkap.
+              </p>
+              <span class="meta">Redaksi Kabar Kita · 17 Oktober 2026</span>
+            </div>
+            <p class="annotation section-annotation">
+              Berita utama — menarik perhatian pada satu berita prioritas.
+            </p>
+          </section>
+
+          <section id="nasional" class="latest" aria-labelledby="latest-title">
+            <div class="section-heading">
+              <h2 id="latest-title">Berita terbaru</h2>
+              <span class="annotation">Daftar artikel untuk dijelajahi.</span>
+            </div>
+            <article class="news-card">
+              <div class="image-placeholder news-image">GAMBAR</div>
+              <div>
+                <p class="category">TEKNOLOGI</p>
+                <h3 id="teknologi">Kelas digital hadir di lebih banyak sekolah</h3>
+                <p class="summary">
+                  Informasi ringkas membantu pembaca memilih artikel yang ingin
+                  dibaca lebih lanjut.
+                </p>
+                <span class="meta">12 menit lalu · 4 menit baca</span>
+              </div>
+            </article>
+            <article class="news-card">
+              <div class="image-placeholder news-image">GAMBAR</div>
+              <div>
+                <p class="category">GAYA HIDUP</p>
+                <h3 id="gaya-hidup">Ruang hijau menjadi pilihan akhir pekan</h3>
+                <p class="summary">
+                  Ringkasan berita berikutnya ditampilkan dengan pola yang sama
+                  agar mudah dipindai.
+                </p>
+                <span class="meta">35 menit lalu · 3 menit baca</span>
+              </div>
+            </article>
+            <article class="news-card">
+              <div class="image-placeholder news-image">GAMBAR</div>
+              <div>
+                <p class="category">OLAHRAGA</p>
+                <h3 id="olahraga">Atlet muda bersiap menghadapi musim kompetisi</h3>
+                <p class="summary">
+                  Setiap item mengarahkan pembaca ke berita lengkap dan
+                  menyediakan konteks singkat.
+                </p>
+                <span class="meta">1 jam lalu · 5 menit baca</span>
+              </div>
+            </article>
+          </section>
+        </div>
+
+        <aside class="sidebar" aria-label="Informasi tambahan">
+          <section class="side-panel">
+            <h2>Topik populer</h2>
+            <ol class="topic-list">
+              <li><span>01</span> Pendidikan</li>
+              <li><span>02</span> Lingkungan</li>
+              <li><span>03</span> Ekonomi kreatif</li>
+            </ol>
+            <p class="annotation">
+              Topik populer — akses cepat ke tema yang sedang banyak dibaca.
+            </p>
+          </section>
+          <section class="side-panel" id="pencarian">
+            <h2>Info redaksi</h2>
+            <p>
+              Alamat untuk pertanyaan, koreksi berita, dan informasi kontak
+              penerbit.
+            </p>
+            <div class="contact-placeholder">EMAIL / KONTAK REDAKSI</div>
+            <p class="annotation">
+              Panel tambahan — informasi praktis yang tidak mengganggu berita.
+            </p>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <strong>KABAR KITA</strong>
+        <span>Kontak redaksi · Tentang kami</span>
+        <span>&copy; 2026 Kabar Kita</span>
+      </div>
+      <p class="annotation footer-annotation">
+        Footer — identitas penerbit dan tautan informasi redaksi.
+      </p>
+    </footer>
+  </body>
+</html>
