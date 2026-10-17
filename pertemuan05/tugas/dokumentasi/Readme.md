@@ -24,7 +24,7 @@ dan kartu berita menyesuaikan lebar. Placeholder gambar sengaja dipertahankan
 agar struktur dan kebutuhan konten terlihat tanpa membuat mockup visual
 beresolusi tinggi.
 
-## Ringkasan (150–250 kata)
+## Ringkasan
 
 Wireframe Kabar Kita merangkum rancangan awal portal berita sebelum visual
 final dan pengembangan aplikasi dibuat. Pada desktop, header menampilkan nama
