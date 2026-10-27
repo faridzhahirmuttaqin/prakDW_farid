@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Dokumentasi warna, tipografi, spacing, tombol, form, dan card Portal Akademik."
+    />
+    <title>Simple Design System | Portal Akademik</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="style-guide-page">
+    <header class="guide-header">
+      <a class="brand" href="tugas.html">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-copy">
+          <strong>Akademik</strong>
+          <span>Simple Design System</span>
+        </span>
+      </a>
+      <a class="button button-secondary" href="tugas.html">
+        <span aria-hidden="true">←</span> Kembali ke Dashboard
+      </a>
+    </header>
+
+    <main class="guide-main">
+      <div class="guide-intro">
+        <p class="eyebrow">PORTAL MAHASISWA · VERSI 1.0</p>
+        <h1>Simple Design System</h1>
+        <p>
+          Kumpulan token dan komponen antarmuka yang menjaga tampilan Portal
+          Akademik tetap konsisten, mudah dibaca, dan responsif.
+        </p>
+      </div>
+
+      <section class="guide-section" aria-labelledby="colors-title">
+        <div class="guide-section-heading">
+          <span class="guide-index">01</span>
+          <div>
+            <h2 id="colors-title">Color palette</h2>
+            <p>Warna inti, netral, dan status untuk antarmuka.</p>
+          </div>
+        </div>
+        <div class="color-grid">
+          <article class="color-swatch">
+            <span class="swatch-color swatch-primary"></span>
+            <strong>Primary</strong><code>#4F46E5</code>
+          </article>
+          <article class="color-swatch">
+            <span class="swatch-color swatch-primary-dark"></span>
+            <strong>Primary dark</strong><code>#3730A3</code>
+          </article>
+          <article class="color-swatch">
+            <span class="swatch-color swatch-accent"></span>
+            <strong>Accent</strong><code>#EEF2FF</code>
+          </article>
+          <article class="color-swatch">
+            <span class="swatch-color swatch-text"></span>
+            <strong>Text utama</strong><code>#172033</code>
+          </article>
+          <article class="color-swatch">
+            <span class="swatch-color swatch-muted"></span>
+            <strong>Text sekunder</strong><code>#667085</code>
+          </article>
+          <article class="color-swatch">
+            <span class="swatch-color swatch-border"></span>
+            <strong>Border</strong><code>#E7EAF1</code>
+          </article>
+          <article class="color-swatch">
+            <span class="swatch-color swatch-success"></span>
+            <strong>Success</strong><code>#15803D</code>
+          </article>
+          <article class="color-swatch">
+            <span class="swatch-color swatch-warning"></span>
+            <strong>Warning</strong><code>#B45309</code>
+          </article>
+          <article class="color-swatch">
+            <span class="swatch-color swatch-info"></span>
+            <strong>Info</strong><code>#1D4ED8</code>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section" aria-labelledby="type-title">
+        <div class="guide-section-heading">
+          <span class="guide-index">02</span>
+          <div>
+            <h2 id="type-title">Typography</h2>
+            <p>Arial dan sans-serif dengan skala ukuran yang konsisten.</p>
+          </div>
+        </div>
+        <div class="type-specimen">
+          <div class="type-row">
+            <strong class="type-display">Aa</strong>
+            <span><strong>Display</strong><code>36px / 700</code></span>
+            <p>Ringkasan akademik</p>
+          </div>
+          <div class="type-row">
+            <strong class="type-h1">Aa</strong>
+            <span><strong>Heading 1</strong><code>28px / 700</code></span>
+            <p>Judul halaman</p>
+          </div>
+          <div class="type-row">
+            <strong class="type-h2">Aa</strong>
+            <span><strong>Heading 2</strong><code>20px / 700</code></span>
+            <p>Judul bagian</p>
+          </div>
+          <div class="type-row">
+            <strong class="type-body">Aa</strong>
+            <span><strong>Body</strong><code>14px / 400</code></span>
+            <p>Informasi mudah dipindai.</p>
+          </div>
+          <div class="type-row">
+            <strong class="type-label">Aa</strong>
+            <span><strong>Label</strong><code>12px / 600</code></span>
+            <p>LABEL DAN KETERANGAN</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section" aria-labelledby="spacing-title">
+        <div class="guide-section-heading">
+          <span class="guide-index">03</span>
+          <div>
+            <h2 id="spacing-title">Spacing</h2>
+            <p>Kelipatan 4px untuk jarak dan padding antarkomponen.</p>
+          </div>
+        </div>
+        <div class="spacing-list">
+          <div class="spacing-item"><code>space-1 · 4px</code><span class="sample-space-1"></span></div>
+          <div class="spacing-item"><code>space-2 · 8px</code><span class="sample-space-2"></span></div>
+          <div class="spacing-item"><code>space-3 · 12px</code><span class="sample-space-3"></span></div>
+          <div class="spacing-item"><code>space-4 · 16px</code><span class="sample-space-4"></span></div>
+          <div class="spacing-item"><code>space-6 · 24px</code><span class="sample-space-6"></span></div>
+          <div class="spacing-item"><code>space-8 · 32px</code><span class="sample-space-8"></span></div>
+        </div>
+      </section>
+
+      <section class="guide-section" aria-labelledby="buttons-title">
+        <div class="guide-section-heading">
+          <span class="guide-index">04</span>
+          <div>
+            <h2 id="buttons-title">Buttons</h2>
+            <p>Variasi aksi utama, sekunder, dan teks.</p>
+          </div>
+        </div>
+        <div class="component-row">
+          <button class="button button-primary" type="button">Primary action <span aria-hidden="true">→</span></button>
+          <button class="button button-secondary" type="button">Secondary action</button>
+          <button class="button button-quiet" type="button">Text action <span aria-hidden="true">→</span></button>
+          <button class="button button-primary" type="button" disabled>Disabled</button>
+        </div>
+      </section>
+
+      <section class="guide-section" aria-labelledby="forms-title">
+        <div class="guide-section-heading">
+          <span class="guide-index">05</span>
+          <div>
+            <h2 id="forms-title">Form controls</h2>
+            <p>Label jelas, petunjuk singkat, dan fokus yang terlihat.</p>
+          </div>
+        </div>
+        <div class="form-specimen">
+          <div class="form-field">
+            <label for="guide-search">Cari informasi</label>
+            <input id="guide-search" type="search" placeholder="Contoh: jadwal kuliah" />
+            <span class="field-help">Gunakan nama mata kuliah atau kata kunci.</span>
+          </div>
+          <div class="form-field">
+            <label for="guide-term">Semester</label>
+            <select id="guide-term">
+              <option>Semester 5 — 2026/2027</option>
+              <option>Semester 4 — 2025/2026</option>
+            </select>
+          </div>
+          <label class="checkbox-field">
+            <input type="checkbox" checked />
+            <span>Ingat pilihan semester saya</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="guide-section" aria-labelledby="cards-title">
+        <div class="guide-section-heading">
+          <span class="guide-index">06</span>
+          <div>
+            <h2 id="cards-title">Cards</h2>
+            <p>Card statistik dan informasi berbagi radius, border, dan elevation.</p>
+          </div>
+        </div>
+        <div class="card-specimen-grid">
+          <article class="stat-card guide-stat-card">
+            <div class="stat-topline">
+              <span class="stat-icon icon-purple" aria-hidden="true">✦</span>
+              <span class="stat-trend">Semester ini</span>
+            </div>
+            <p class="stat-label">Indeks Prestasi</p>
+            <strong class="stat-value">3,78<span>/4,00</span></strong>
+            <span class="stat-footnote"><span class="trend-up">↗ 0,12</span> dari semester lalu</span>
+          </article>
+          <article class="panel guide-example-panel">
+            <span class="status-badge badge-amber">Pengingat</span>
+            <h3>Pengisian KRS</h3>
+            <p>Gunakan panel untuk informasi yang perlu mendapat perhatian.</p>
+            <button class="button button-secondary button-small" type="button">Baca pengumuman <span aria-hidden="true">→</span></button>
+          </article>
+        </div>
+      </section>
+
+      <footer class="guide-footer">
+        <span>Portal Akademik · Simple Design System</span>
+        <a href="tugas.html">Kembali ke mockup</a>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mockup dashboard akademik responsif dengan Simple Design System."
+    />
+    <title>Dashboard Akademik | Portal Mahasiswa</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#beranda" aria-label="Akademik, ke beranda">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-copy">
+            <strong>Akademik</strong>
+            <span>Portal Mahasiswa</span>
+          </span>
+        </a>
+
+        <p class="nav-label">MENU UTAMA</p>
+        <nav class="sidebar-nav" aria-label="Navigasi utama">
+          <a class="nav-link is-active" href="#beranda" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">▦</span>
+            Dashboard
+          </a>
+          <a class="nav-link" href="#jadwal">
+            <span class="nav-icon" aria-hidden="true">▤</span>
+            Jadwal Kuliah
+          </a>
+          <a class="nav-link" href="#krs">
+            <span class="nav-icon" aria-hidden="true">＋</span>
+            KRS
+          </a>
+          <a class="nav-link" href="#hasil-studi">
+            <span class="nav-icon" aria-hidden="true">▥</span>
+            Hasil Studi
+          </a>
+          <a class="nav-link" href="#keuangan">
+            <span class="nav-icon" aria-hidden="true">◇</span>
+            Keuangan
+          </a>
+          <a class="nav-link" href="#pengaturan">
+            <span class="nav-icon" aria-hidden="true">⚙</span>
+            Pengaturan
+          </a>
+        </nav>
+
+        <div class="sidebar-help">
+          <span class="help-icon" aria-hidden="true">?</span>
+          <div>
+            <strong>Butuh bantuan?</strong>
+            <a href="mailto:akademik@universitas.ac.id">Hubungi akademik</a>
+          </div>
+        </div>
+        <a class="sidebar-design-link" href="design-system.html">
+          Lihat Simple Design System
+        </a>
+      </aside>
+
+      <main id="beranda" class="main-content">
+        <header class="topbar">
+          <div class="welcome">
+            <p class="eyebrow">SENIN, 26 OKTOBER 2026</p>
+            <h1>Selamat datang, Farid Zhahir Muttaqin <span aria-hidden="true">👋</span></h1>
+            <p class="welcome-copy">
+              Berikut ringkasan kegiatan akademikmu hari ini.
+            </p>
+          </div>
+          <div class="topbar-actions">
+            <form class="search-form" role="search" action="#mata-kuliah">
+              <label class="visually-hidden" for="dashboard-search">
+                Cari mata kuliah atau informasi
+              </label>
+              <span class="search-icon" aria-hidden="true">⌕</span>
+              <input
+                id="dashboard-search"
+                type="search"
+                name="q"
+                placeholder="Cari sesuatu..."
+              />
+              <button class="search-submit" type="submit">
+                <span class="visually-hidden">Cari</span>
+                <span aria-hidden="true">↵</span>
+              </button>
+            </form>
+            <button class="icon-button notification-button" type="button" aria-label="Notifikasi, 2 belum dibaca">
+              <span aria-hidden="true">♧</span>
+              <span class="notification-dot" aria-hidden="true"></span>
+            </button>
+            <div class="profile" id="pengaturan">
+              <img src="images/darwin-icon.jpg" alt="Ikon Darwin untuk profil Farid Zhahir Muttaqin" />
+              <div class="profile-copy">
+                <strong>Farid Zhahir Muttaqin</strong>
+                <span>Mahasiswa aktif</span>
+              </div>
+              <span class="profile-chevron" aria-hidden="true">⌄</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="stat-grid" aria-label="Ringkasan akademik">
+          <article class="stat-card" id="hasil-studi">
+            <div class="stat-topline">
+              <span class="stat-icon icon-purple" aria-hidden="true">✦</span>
+              <span class="stat-trend">Semester ini</span>
+            </div>
+            <p class="stat-label">Indeks Prestasi</p>
+            <strong class="stat-value">3,78<span>/4,00</span></strong>
+            <span class="stat-footnote"><span class="trend-up">↗ 0,12</span> dari semester lalu</span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-topline">
+              <span class="stat-icon icon-blue" aria-hidden="true">▤</span>
+              <span class="stat-trend">61% tercapai</span>
+            </div>
+            <p class="stat-label">Total SKS</p>
+            <strong class="stat-value">88<span> SKS</span></strong>
+            <span class="stat-footnote">dari 144 SKS kelulusan</span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-topline">
+              <span class="stat-icon icon-amber" aria-hidden="true">▣</span>
+              <span class="status-badge badge-blue">Berjalan</span>
+            </div>
+            <p class="stat-label">Mata Kuliah</p>
+            <strong class="stat-value">7<span> kelas</span></strong>
+            <span class="stat-footnote">Semester 5 · Tahun 2026/2027</span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-topline">
+              <span class="stat-icon icon-green" aria-hidden="true">✓</span>
+              <span class="status-badge badge-green">Aktif</span>
+            </div>
+            <p class="stat-label">Status Akademik</p>
+            <strong class="stat-value">Terdaftar</strong>
+            <span class="stat-footnote">Tahun ajaran 2026/2027</span>
+          </article>
+        </section>
+
+        <div class="content-grid">
+          <section id="jadwal" class="panel schedule-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">SENIN, 26 OKTOBER</p>
+                <h2>Jadwal Hari Ini</h2>
+              </div>
+              <a class="button button-secondary button-small" href="#jadwal">
+                Lihat semua <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="schedule-list">
+              <article class="schedule-item">
+                <div class="schedule-time">
+                  <strong>08:00</strong>
+                  <span>09:40</span>
+                </div>
+                <span class="schedule-marker marker-purple" aria-hidden="true"></span>
+                <div class="schedule-details">
+                  <h3>Desain Web</h3>
+                  <p>Ruang Lab Komputer 1 <span aria-hidden="true">·</span> Saka Wijaya, M.Kom.</p>
+                </div>
+                <span class="class-badge">3 SKS</span>
+              </article>
+              <article class="schedule-item">
+                <div class="schedule-time">
+                  <strong>10:00</strong>
+                  <span>11:40</span>
+                </div>
+                <span class="schedule-marker marker-blue" aria-hidden="true"></span>
+                <div class="schedule-details">
+                  <h3>Basis Data</h3>
+                  <p>Ruang 204 <span aria-hidden="true">·</span> Maura Anastasya, S.Kom.</p>
+                </div>
+                <span class="class-badge">3 SKS</span>
+              </article>
+              <article class="schedule-item">
+                <div class="schedule-time">
+                  <strong>13:00</strong>
+                  <span>14:40</span>
+                </div>
+                <span class="schedule-marker marker-green" aria-hidden="true"></span>
+                <div class="schedule-details">
+                  <h3>Pemrograman Web</h3>
+                  <p>Laboratorium Komputer 2 <span aria-hidden="true">·</span> Sadib Satya, M.T.</p>
+                </div>
+                <span class="class-badge">3 SKS</span>
+              </article>
+            </div>
+            <div class="schedule-note">
+              <span aria-hidden="true">ⓘ</span>
+              Pastikan datang 10 menit sebelum kelas dimulai.
+            </div>
+          </section>
+
+          <aside id="pengumuman" class="panel announcement-panel" aria-labelledby="announcement-title">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">JANGAN TERLEWAT</p>
+                <h2 id="announcement-title">Pengumuman</h2>
+              </div>
+              <span class="unread-count">2 baru</span>
+            </div>
+            <article class="announcement">
+              <span class="status-badge badge-amber">Penting</span>
+              <h3>Pengisian KRS</h3>
+              <p>Pengisian KRS semester berikutnya dibuka pada 24 Agustus 2026.</p>
+              <span class="announcement-date">Akademik · 20 Okt 2026</span>
+            </article>
+            <article class="announcement">
+              <span class="status-badge badge-blue">Informasi</span>
+              <h3>Seminar Akademik</h3>
+              <p>Seminar akademik berlangsung di auditorium universitas.</p>
+              <span class="announcement-date">Kemahasiswaan · 18 Okt 2026</span>
+            </article>
+            <article class="announcement" id="keuangan">
+              <span class="status-badge badge-green">Keuangan</span>
+              <h3>Informasi biaya kuliah</h3>
+              <p>Periksa jadwal dan status pembayaran semester melalui layanan keuangan kampus.</p>
+              <span class="announcement-date">Layanan mahasiswa</span>
+            </article>
+            <a class="text-link" href="#pengumuman">Lihat semua pengumuman <span aria-hidden="true">→</span></a>
+          </aside>
+        </div>
+
+        <section id="krs" class="panel course-panel">
+          <span id="mata-kuliah" class="visually-hidden">Mata kuliah semester ini</span>
+          <div class="panel-heading course-heading">
+            <div>
+              <p class="eyebrow">SEMESTER 5 · 2026/2027</p>
+              <h2>Mata Kuliah Semester Ini</h2>
+            </div>
+            <a class="button button-secondary button-small" href="#mata-kuliah">
+              Unduh KRS <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Mata Kuliah</th>
+                  <th scope="col">SKS</th>
+                  <th scope="col">Dosen Pengampu</th>
+                  <th scope="col">Jadwal</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="course-dot dot-purple"></span>Desain Web</td>
+                  <td>3 SKS</td>
+                  <td>Saka Wijaya, M.Kom.</td>
+                  <td>Senin, 08:00</td>
+                  <td><span class="status-badge badge-green">Aktif</span></td>
+                </tr>
+                <tr>
+                  <td><span class="course-dot dot-blue"></span>Basis Data</td>
+                  <td>3 SKS</td>
+                  <td>Maura Anastasya, S.Kom.</td>
+                  <td>Senin, 10:00</td>
+                  <td><span class="status-badge badge-green">Aktif</span></td>
+                </tr>
+                <tr>
+                  <td><span class="course-dot dot-green"></span>Pemrograman Web</td>
+                  <td>3 SKS</td>
+                  <td>Sadib Satya, M.T.</td>
+                  <td>Senin, 13:00</td>
+                  <td><span class="status-badge badge-green">Aktif</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <footer class="page-footer">
+          <span>&copy; 2026 Portal Akademik Universitas.</span>
+          <div>
+            <a href="mailto:akademik@universitas.ac.id">Pusat Bantuan</a>
+            <a href="design-system.html">Simple Design System</a>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
