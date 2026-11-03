@@ -105,6 +105,18 @@ textarea:focus {
   outline: 2px solid rgb(52 84 209 / 20%);
 }
 
+input:invalid:focus,
+select:invalid:focus,
+textarea:invalid:focus {
+  border-color: #b42318;
+  background-color: #fff8f7;
+}
+
+.choice input[type="radio"]:invalid:focus {
+  outline: 2px solid #b42318;
+  outline-offset: 2px;
+}
+
 .choice-list {
   display: flex;
   flex-wrap: wrap;

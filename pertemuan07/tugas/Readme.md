@@ -48,15 +48,18 @@ kehadiran, serta panjang catatan. Server juga harus memeriksa keberadaan,
 ukuran, dan tipe file yang diunggah; atribut `accept` hanya membantu
 membatasi pilihan file pada browser dan bukan pemeriksaan keamanan.
 
-## Screenshot
+## Screenshot hasil pengujian
 
-### Desktop
+Setiap screenshot menampilkan satu input tidak valid dan ditandai warna merah.
+Pengujian memastikan browser menolak pengiriman form untuk input tersebut.
 
-![Form registrasi pada desktop dengan input wajib belum diisi](./dokumentasi/screenshots/desktop.png)
-
-### Mobile
-
-![Form registrasi pada mobile dengan input wajib belum diisi](./dokumentasi/screenshots/mobile.png)
+- Nama kosong — [desktop](./dokumentasi/screenshots/nama-kosong.png)
+- Format email salah — [desktop](./dokumentasi/screenshots/email-salah.png)
+- Nomor telepon kurang dari 10 digit — [desktop](./dokumentasi/screenshots/telepon-salah.png)
+- Sesi belum dipilih — [desktop](./dokumentasi/screenshots/sesi-kosong.png)
+- Pilihan kehadiran belum dipilih — [desktop](./dokumentasi/screenshots/kehadiran-kosong.png)
+- Bukti identitas belum diunggah — [desktop](./dokumentasi/screenshots/bukti-kosong.png)
+- Catatan kurang dari 10 karakter — [mobile](./dokumentasi/screenshots/catatan-terlalu-singkat-mobile.png)
 
 ## Struktur
 
@@ -68,6 +71,11 @@ tugas/
 |   `-- style.css
 `-- dokumentasi/
     `-- screenshots/
-        |-- desktop.png
-        `-- mobile.png
+        |-- nama-kosong.png
+        |-- email-salah.png
+        |-- telepon-salah.png
+        |-- sesi-kosong.png
+        |-- kehadiran-kosong.png
+        |-- bukti-kosong.png
+        `-- catatan-terlalu-singkat-mobile.png
 ```
