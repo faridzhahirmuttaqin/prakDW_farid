@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrasi Event | Seminar Desain Web</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="registration">
+      <header class="page-header">
+        <p class="eyebrow">FORM REGISTRASI EVENT</p>
+        <h1>Seminar Desain Web</h1>
+        <p>Isi formulir berikut untuk mendaftar sebagai peserta.</p>
+      </header>
+
+      <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Data Peserta</legend>
+
+          <div class="form-group">
+            <label for="nama">Nama lengkap</label>
+            <input
+              id="nama"
+              name="nama"
+              type="text"
+              minlength="3"
+              maxlength="60"
+              placeholder="Masukkan nama lengkap"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="nama@email.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="telepon">Nomor telepon</label>
+            <input
+              id="telepon"
+              name="telepon"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9]{10,13}"
+              title="Masukkan 10 sampai 13 digit angka tanpa spasi."
+              placeholder="Contoh: 081234567890"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="sesi">Pilih sesi</label>
+            <select id="sesi" name="sesi" required>
+              <option value="">Pilih sesi seminar</option>
+              <option value="pagi">Sesi pagi · 09.00–12.00</option>
+              <option value="siang">Sesi siang · 13.00–16.00</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Pilihan Peserta</legend>
+
+          <div class="form-group">
+            <span class="field-label">Jenis kehadiran</span>
+            <div class="choice-list">
+              <label class="choice">
+                <input type="radio" name="kehadiran" value="langsung" required />
+                <span>Hadir langsung</span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="kehadiran" value="daring" />
+                <span>Hadir daring</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <span class="field-label">Topik yang diminati (opsional)</span>
+            <div class="choice-list">
+              <label class="choice">
+                <input type="checkbox" name="topik" value="html" />
+                <span>HTML</span>
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="topik" value="css" />
+                <span>CSS</span>
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="topik" value="form" />
+                <span>Form HTML</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="catatan">Catatan untuk panitia</label>
+            <textarea
+              id="catatan"
+              name="catatan"
+              rows="4"
+              minlength="10"
+              maxlength="300"
+              placeholder="Tuliskan catatan minimal 10 karakter (opsional)"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="bukti">Unggah bukti identitas</label>
+            <input
+              id="bukti"
+              name="bukti"
+              type="file"
+              accept=".pdf,.jpg,.jpeg,.png"
+              required
+            />
+            <small>Format PDF, JPG, atau PNG.</small>
+          </div>
+        </fieldset>
+
+        <button type="submit">Kirim Pendaftaran</button>
+      </form>
+    </main>
+  </body>
+</html>
