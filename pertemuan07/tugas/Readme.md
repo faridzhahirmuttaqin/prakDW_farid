@@ -19,8 +19,8 @@ serta penjelasan validasi yang tetap harus dilakukan di server.
 3. Nomor telepon wajib terdiri dari 10–13 digit angka.
 4. Sesi wajib dipilih.
 5. Salah satu pilihan kehadiran wajib dipilih.
-6. File bukti identitas wajib diunggah; pilihan format dibatasi ke PDF, JPG,
-   JPEG, atau PNG.
+6. File bukti identitas wajib dipilih. Atribut `accept` menyarankan format
+   PDF, JPG, JPEG, atau PNG pada pemilih file.
 7. Catatan bersifat opsional; jika diisi, panjangnya 10–300 karakter.
 
 Validasi tersebut menggunakan atribut HTML, seperti `required`, `type`,
@@ -32,13 +32,13 @@ textarea untuk catatan, serta file input untuk bukti identitas.
 
 | No. | Field | Input uji | Hasil yang diharapkan | Hasil aktual |
 | --- | --- | --- | --- | --- |
-| 1 | Nama | Kosong | Form ditolak; nama wajib diisi. | Form ditolak oleh validasi browser. |
-| 2 | Email | `farid@` | Form ditolak; format email tidak valid. | Form ditolak oleh validasi browser. |
-| 3 | Nomor telepon | `12345` | Form ditolak; harus 10–13 digit angka. | Form ditolak oleh validasi browser. |
-| 4 | Sesi | Tidak memilih sesi | Form ditolak; sesi wajib dipilih. | Form ditolak oleh validasi browser. |
-| 5 | Kehadiran | Tidak memilih radio | Form ditolak; jenis kehadiran wajib dipilih. | Form ditolak oleh validasi browser. |
-| 6 | Bukti identitas | Tidak mengunggah file | Form ditolak; bukti identitas wajib diunggah. | Form ditolak oleh validasi browser. |
-| 7 | Catatan | `Halo` | Form ditolak jika catatan diisi kurang dari 10 karakter. | Form ditolak oleh validasi browser. |
+| 1 | Nama | Kosong | Nama ditandai tidak valid. | Gagal validasi browser (`checkValidity() = false`). |
+| 2 | Email | `farid@` | Format email ditandai tidak valid. | Gagal validasi browser (`checkValidity() = false`). |
+| 3 | Nomor telepon | `12345` | Nomor ditandai tidak valid karena kurang dari 10 digit. | Gagal validasi browser (`checkValidity() = false`). |
+| 4 | Sesi | Tidak memilih sesi | Sesi ditandai tidak valid. | Gagal validasi browser (`checkValidity() = false`). |
+| 5 | Kehadiran | Tidak memilih radio | Pilihan kehadiran ditandai tidak valid. | Gagal validasi browser (`checkValidity() = false`). |
+| 6 | Bukti identitas | Tidak memilih file | Bukti identitas ditandai tidak valid. | Gagal validasi browser (`checkValidity() = false`). |
+| 7 | Catatan | `Halo` | Catatan ditandai tidak valid karena kurang dari 10 karakter. | Gagal validasi browser (`checkValidity() = false`). |
 
 ## Validasi di server
 
@@ -48,18 +48,46 @@ kehadiran, serta panjang catatan. Server juga harus memeriksa keberadaan,
 ukuran, dan tipe file yang diunggah; atribut `accept` hanya membantu
 membatasi pilihan file pada browser dan bukan pemeriksaan keamanan.
 
+## Perubahan, masalah, dan solusi
+
+Form dibuat menggunakan elemen dan validasi HTML sesuai materi. Saat menyiapkan
+bukti, screenshot awal hanya memperlihatkan form kosong sehingga hasil setiap
+skenario input salah tidak terlihat jelas di README. Saya menggantinya dengan
+screenshot pengujian per skenario: data pada field lain valid, field yang
+sedang diuji tidak valid, dan field tersebut difokuskan agar tandanya terlihat.
+
 ## Screenshot hasil pengujian
 
-Setiap screenshot menampilkan satu input tidak valid dan ditandai warna merah.
-Pengujian memastikan browser menolak pengiriman form untuk input tersebut.
+Setiap screenshot di bawah ini memperlihatkan hasil skenario input tidak valid.
+Enam skenario diambil pada desktop dan satu skenario pada mobile.
 
-- Nama kosong — [desktop](./dokumentasi/screenshots/nama-kosong.png)
-- Format email salah — [desktop](./dokumentasi/screenshots/email-salah.png)
-- Nomor telepon kurang dari 10 digit — [desktop](./dokumentasi/screenshots/telepon-salah.png)
-- Sesi belum dipilih — [desktop](./dokumentasi/screenshots/sesi-kosong.png)
-- Pilihan kehadiran belum dipilih — [desktop](./dokumentasi/screenshots/kehadiran-kosong.png)
-- Bukti identitas belum diunggah — [desktop](./dokumentasi/screenshots/bukti-kosong.png)
-- Catatan kurang dari 10 karakter — [mobile](./dokumentasi/screenshots/catatan-terlalu-singkat-mobile.png)
+### Desktop — Nama kosong
+
+![Skenario desktop dengan nama kosong](./dokumentasi/screenshots/nama-kosong.png)
+
+### Desktop — Format email salah
+
+![Skenario desktop dengan format email salah](./dokumentasi/screenshots/email-salah.png)
+
+### Desktop — Nomor telepon kurang dari 10 digit
+
+![Skenario desktop dengan nomor telepon kurang dari 10 digit](./dokumentasi/screenshots/telepon-salah.png)
+
+### Desktop — Sesi belum dipilih
+
+![Skenario desktop tanpa sesi yang dipilih](./dokumentasi/screenshots/sesi-kosong.png)
+
+### Desktop — Pilihan kehadiran belum dipilih
+
+![Skenario desktop tanpa pilihan kehadiran](./dokumentasi/screenshots/kehadiran-kosong.png)
+
+### Desktop — Bukti identitas belum dipilih
+
+![Skenario desktop tanpa file bukti identitas](./dokumentasi/screenshots/bukti-kosong.png)
+
+### Mobile — Catatan kurang dari 10 karakter
+
+![Skenario mobile dengan catatan kurang dari 10 karakter](./dokumentasi/screenshots/catatan-terlalu-singkat-mobile.png)
 
 ## Struktur
 
